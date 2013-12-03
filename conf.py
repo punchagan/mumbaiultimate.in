@@ -106,12 +106,10 @@ NAVIGATION_LINKS = {
 #
 
 POSTS = (
-    ("posts/*.rst", "posts", "post.tmpl"),
-    ("posts/*.txt", "posts", "post.tmpl"),
+    ("posts/*.md", "posts", "post.tmpl"),
 )
 PAGES = (
-    ("stories/*.rst", '', "story.tmpl"),
-    ("stories/*.txt", '', "story.tmpl"),
+    ("pages/*.md", '', "story.tmpl"),
 )
 
 # One or more folders containing files to be copied as-is into the output.
@@ -128,18 +126,11 @@ PAGES = (
 # 'markdown' is MarkDown
 # 'html' assumes the file is html and just copies it
 COMPILERS = {
-    "rest": ('.rst', '.txt'),
-    "markdown": ('.md', '.mdown', '.markdown'),
-    "textile": ('.textile',),
-    "txt2tags": ('.t2t',),
-    "bbcode": ('.bb',),
-    "wiki": ('.wiki',),
-    "ipynb": ('.ipynb',),
     "html": ('.html', '.htm'),
     # Pandoc detects the input from the source filename
     # but is disabled by default as it would conflict
     # with many of the others.
-    # "pandoc": ('.rst', '.md', '.txt'),
+    "pandoc": ('.rst', '.md', '.txt'),
 }
 
 # Create by default posts in one file format?
@@ -166,7 +157,7 @@ COMPILERS = {
 # TAG_PAGES_ARE_INDEXES = True
 
 # Final location is output / TRANSLATION[lang] / INDEX_PATH / index-*.html
-INDEX_PATH = "blog"
+INDEX_PATH = "posts"
 
 # Create per-month archives instead of per-year
 # CREATE_MONTHLY_ARCHIVE = False
