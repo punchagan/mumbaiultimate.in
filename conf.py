@@ -216,7 +216,16 @@ DEPLOY_COMMANDS = [
     'nikola orphans|xargs rm || true',
     'git checkout master',
     'nikola build',
+    'git checkout --orphan gh-pages',
+    'git rm -rf .',
+    'git checkout master -- .gitignore',
+    'git checkout master -- commit-changes',
+    'mv output/* .',
     './commit-changes',
+    'git push -f origin gh-pages:gh-pages',
+    'git checkout master',
+    'git branch -D gh-pages',
+    'git push origin master',
 ]
 
 # Where the output site should be located
