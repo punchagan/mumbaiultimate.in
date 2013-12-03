@@ -38,4 +38,6 @@ nosetests.xml
 # Nikola related
 output/
 cache/
+.doit.db
+Guardfile
 
