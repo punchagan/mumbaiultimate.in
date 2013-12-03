@@ -212,6 +212,12 @@ INDEX_PATH = "blog"
 # plugin (`nikola install_plugin ping`).
 # To do manual deployment, set it to []
 # DEPLOY_COMMANDS = []
+DEPLOY_COMMANDS = [
+    'nikola orphans|xargs rm || true',
+    'git checkout master',
+    'nikola build',
+    './commit-changes',
+]
 
 # Where the output site should be located
 # If you don't use an absolute path, it will be considered as relative
