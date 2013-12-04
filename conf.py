@@ -355,7 +355,7 @@ CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
 # To use comments, you can choose between different third party comment
 # systems, one of "disqus", "livefyre", "intensedebate", "moot",
 #                 "googleplus", "facebook" or "isso"
-# COMMENT_SYSTEM = "disqus"
+COMMENT_SYSTEM = ''
 # And you also need to add your COMMENT_SYSTEM_ID which
 # depends on what comment system you use. The default is
 # "nikolademo" which is a test account for Disqus. More information
