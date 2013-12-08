@@ -127,10 +127,7 @@ PAGES = (
 # 'html' assumes the file is html and just copies it
 COMPILERS = {
     "html": ('.html', '.htm'),
-    # Pandoc detects the input from the source filename
-    # but is disabled by default as it would conflict
-    # with many of the others.
-    "pandoc": ('.rst', '.md', '.txt'),
+    "rest_html5": ('.rst', ),
 }
 
 # Create by default posts in one file format?
