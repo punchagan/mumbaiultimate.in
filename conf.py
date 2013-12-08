@@ -663,12 +663,25 @@ GLOBAL_CONTEXT = {
         (
             'Your team!',
             'http://placehold.it/200x200&text=Your team!',
-            'https://www.facebook.com/stormchasers.mu',
+            '#',
         ),
         (
             'Register Now!',
             'http://placehold.it/200x200&text=Register Now!',
-            'https://www.facebook.com/stormchasers.mu',
+            '#',
         ),
     ],
+
+    'SPONSORS': [
+        (
+            'You',
+            'http://placehold.it/200x200&text=You',
+            '#',
+        ),
+        (
+            'Sponsor us!',
+            'http://placehold.it/200x200&text=Sponsor us!',
+            '#',
+        ),
+    ]
 }
