@@ -1,0 +1,17 @@
+<%def name="list_teams()">
+<section id="Teams">
+  <h2>Teams</h2>
+    <div class="row-fluid">
+      %for name, img, url in TEAMS:
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+          <div class="img-wrapper">
+            <a href="${url}" target="_blank" title="${name}" alt="${name}">
+               <img src="${img}" class="img-rounded">
+            </a>
+          </div>
+          <p>${name}</p>
+        </div>
+      %endfor
+    </div>
+</section>
+</%def>

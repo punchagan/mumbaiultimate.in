@@ -1,0 +1,57 @@
+<%inherit file="story.tmpl"/>
+<%namespace name="misc" file="misc_helper.tmpl" import="*" />
+
+<%block name="carousel">
+<!-- Carousel -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Mumbai Ultimate Open</h1>
+          <p><a class="btn btn-lg btn-primary" href="#teams" role="button">Teams</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>March 2014</h1>
+          <p><a class="btn btn-lg btn-primary" href="#schedule" role="button">Schedule</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="" >
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Goregaon Sports Club, Mumbai</h1>
+          <p><a class="btn btn-lg btn-primary" href="#venue" role="button">Venue</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+<!-- /.carousel -->
+</%block>
+
+<%block name="content">
+%if title and not post.meta('hidetitle'):
+    <h1>${title}</h1>
+%endif
+    ${post.text()}
+%if enable_comments and not post.meta('nocomments'):
+    ${comments.comment_form(post.permalink(absolute=True), post.title(), post.base_path)}
+%endif
+${misc.list_teams()}
+</%block>

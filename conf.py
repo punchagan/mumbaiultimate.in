@@ -54,7 +54,7 @@ DEFAULT_LANG = "en"
 # The format is {"translationcode" : "path/to/translation" }
 # the path will be used as a prefix for the generated pages location
 TRANSLATIONS = {
-    DEFAULT_LANG: "",
+    DEFAULT_LANG: '',
     # Example for another language:
     # "es": "./es",
 }
@@ -63,9 +63,9 @@ TRANSLATIONS = {
 # You should provide a key-value pair for each used language.
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        # ('/archive.html', 'Archives'),
-        # ('/categories/index.html', 'Tags'),
-        # ('/rss.xml', 'RSS'),
+        ('#about', 'About'),
+        ('#venue', 'Venue'),
+        ('#sponsors', 'Sponsors'),
     ),
 }
 
@@ -106,10 +106,10 @@ NAVIGATION_LINKS = {
 #
 
 POSTS = (
-    ("posts/*.md", "posts", "post.tmpl"),
+    ("posts/*.rst", "posts", "post.tmpl"),
 )
 PAGES = (
-    ("pages/*.md", '', "story.tmpl"),
+    ("pages/*.rst", '', "story.tmpl"),
 )
 
 # One or more folders containing files to be copied as-is into the output.
@@ -126,8 +126,8 @@ PAGES = (
 # 'markdown' is MarkDown
 # 'html' assumes the file is html and just copies it
 COMPILERS = {
-    "html": ('.html', '.htm'),
     "rest_html5": ('.rst', ),
+    "html": ('.html', '.htm'),
 }
 
 # Create by default posts in one file format?
@@ -289,7 +289,7 @@ DEPLOY_COMMANDS = []
 # translated
 
 # Name of the theme to use.
-THEME = "bootstrap3"
+THEME = "custom"
 
 # Color scheme to be used for code blocks. If your theme provides
 # "assets/css/code.css" this is ignored.
@@ -455,7 +455,7 @@ COMMENT_SYSTEM = ''
 SOCIAL_BUTTONS_CODE = ''
 
 # Hide link to source for the posts?
-# HIDE_SOURCELINK = False
+HIDE_SOURCELINK = True
 # Copy the source files for your pages?
 # Setting it to False implies HIDE_SOURCELINK = True
 COPY_SOURCES = False
@@ -607,6 +607,8 @@ COPY_SOURCES = False
 # Plugins you don't want to use. Be careful :-)
 # DISABLED_PLUGINS = ["render_galleries"]
 
+EXTRA_PLUGINS_DIRS = ['/home/punchagan/software/random/Nikola/plugins/plugins']
+
 # Experimental plugins - use at your own risk.
 # They probably need some manual adjustments - please see their respective
 # readme.
@@ -650,4 +652,22 @@ LOGGING_HANDLERS = {
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
 
-GLOBAL_CONTEXT = {}
+GLOBAL_CONTEXT = {
+    'TEAMS': [
+        (
+            'Storm Chasers',
+            "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/c0.12.180.180/s160x160/249789_1383693768818_3672602_a.jpg",
+            "https://www.facebook.com/stormchasers.mu",
+        ),
+        (
+            'Your team!',
+            'http://placehold.it/200x200&text=Your team!',
+            'https://www.facebook.com/stormchasers.mu',
+        ),
+        (
+            'Register Now!',
+            'http://placehold.it/200x200&text=Register Now!',
+            'https://www.facebook.com/stormchasers.mu',
+        ),
+    ],
+}
