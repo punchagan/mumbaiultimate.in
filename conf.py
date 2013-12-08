@@ -515,19 +515,6 @@ COPY_SOURCES = False
 # <input type="text" id="tipue_search_input">
 # </span>"""
 #
-# BODY_END = """
-# <script type="text/javascript" src="/assets/js/tipuesearch_set.js"></script>
-# <script type="text/javascript" src="/assets/js/tipuesearch.js"></script>
-# <script type="text/javascript">
-# $(document).ready(function() {
-    # $('#tipue_search_input').tipuesearch({
-        # 'mode': 'json',
-        # 'contentLocation': '/assets/js/tipuesearch_content.json',
-        # 'showUrl': false
-    # });
-# });
-# </script>
-# """
 
 # EXTRA_HEAD_DATA = """
 # <link rel="stylesheet" type="text/css" href="/assets/css/tipuesearch.css">
@@ -542,7 +529,7 @@ COPY_SOURCES = False
 # is served from the NetDNA CDN
 # Set this to False if you want to host your site without requiring access to
 # external resources.
-# USE_CDN = False
+USE_CDN = True
 
 # Extra things you want in the pages HEAD tag. This will be added right
 # before </HEAD>
@@ -603,7 +590,7 @@ COPY_SOURCES = False
 # TIMEZONE = 'UTC'
 
 # If webassets is installed, bundle JS and CSS to make site loading faster
-# USE_BUNDLES = True
+USE_BUNDLES = True
 
 # Plugins you don't want to use. Be careful :-)
 # DISABLED_PLUGINS = ["render_galleries"]
@@ -649,6 +636,27 @@ LOGGING_HANDLERS = {
     #    'bubble': True
     #}
 }
+
+BODY_END = """
+
+
+<script type="text/javascript">
+
+		var map = L.map('map').setView([19.182559, 72.834452], 15);
+
+		L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
+			maxZoom: 18,
+			attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'
+		}).addTo(map);
+
+
+		L.marker([19.182559, 72.834452]).addTo(map)
+			.bindPopup("Goregaon Sports Club").openPopup();
+
+		var popup = L.popup();
+
+</script>
+"""
 
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.

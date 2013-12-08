@@ -16,3 +16,11 @@ Venue
 =====
 
 Mumbai, India
+
+.. raw:: html
+
+    <div id="map" class="visible-sm visible-md visible-lg"></div>
+
+.. container:: visible-xs
+
+    Goregaon Sports Club.
