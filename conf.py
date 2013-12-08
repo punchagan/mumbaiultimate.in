@@ -65,6 +65,7 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ('#about', 'About'),
         ('#venue', 'Venue'),
+        ('#teams', 'Teams'),
         ('#sponsors', 'Sponsors'),
     ),
 }
