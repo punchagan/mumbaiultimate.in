@@ -216,7 +216,6 @@ DEPLOY_COMMANDS = [
     'git branch -D gh-pages',
     'git push origin master',
 ]
-DEPLOY_COMMANDS = []
 
 # Where the output site should be located
 # If you don't use an absolute path, it will be considered as relative
@@ -358,7 +357,7 @@ COMMENT_SYSTEM = ''
 # depends on what comment system you use. The default is
 # "nikolademo" which is a test account for Disqus. More information
 # is in the manual.
-# COMMENT_SYSTEM_ID = "nikolademo"
+COMMENT_SYSTEM_ID = ''
 
 # Enable annotations using annotateit.org?
 # If set to False, you can still enable them for individual posts and pages
