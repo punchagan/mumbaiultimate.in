@@ -654,6 +654,7 @@ BODY_END = """
 
 		var popup = L.popup();
 
+        map.scrollWheelZoom.disable();
 </script>
 """
 
