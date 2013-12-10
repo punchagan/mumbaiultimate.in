@@ -7,7 +7,7 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Mumbai Ultimate"
-BLOG_TITLE = "Mumbai Ultimate Open"
+BLOG_TITLE = "Mumbai Ultimate"
 # This is the main URL for your site. It will be used
 # in a prominent link
 SITE_URL = "http://mumbaiultimate.in/"
@@ -17,37 +17,6 @@ SITE_URL = "http://mumbaiultimate.in/"
 BLOG_EMAIL = "joe@demo.site"
 BLOG_DESCRIPTION = "News and updates for %s" % BLOG_TITLE
 
-# Nikola is multilingual!
-#
-# Currently supported languages are:
-# bg     Bulgarian
-# ca     Catalan
-# de     German
-# el     Greek [NOT gr!]
-# en     English
-# eo     Esperanto
-# es     Spanish
-# fa     Persian
-# fi     Finnish
-# fr     French
-# hr     Croatian
-# it     Italian
-# jp     Japanese
-# nl     Dutch
-# pt_br  Portuguese (Brasil)
-# pl     Polish
-# ru     Russian
-# sl     Slovenian [NOT sl_si!]
-# tr_tr  Turkish (Turkey)
-# zh_cn  Chinese (Simplified)
-#
-# If you want to use Nikola with a non-supported language you have to provide
-# a module containing the necessary translations
-# (p.e. look at the modules at: ./nikola/data/themes/default/messages/fr.py).
-# If a specific post is not translated to a language, then the version
-# in the default language will be shown instead.
-
-# What is the default language?
 DEFAULT_LANG = "en"
 
 # What other languages do you have?
@@ -63,10 +32,16 @@ TRANSLATIONS = {
 # You should provide a key-value pair for each used language.
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ('#about', 'About'),
-        ('#venue', 'Venue'),
-        ('#teams', 'Teams'),
-        ('#sponsors', 'Sponsors'),
+        (
+            (
+                ('/2013/', 'Home'),
+                ('/2013/#about', 'About'),
+                ('/2013/#venue', 'Venue'),
+                ('/2013/#teams', 'Teams'),
+                ('/2013/#sponsors', 'Sponsors'),
+            ),
+            'Mumbai Ultimate Open-2013',
+        ),
     ),
 }
 
@@ -78,7 +53,7 @@ NAVIGATION_LINKS = {
 # python's locales will accept in your OS, by example
 # "en_US.utf8" in unix-like OS, "English_United States" in Windows.
 # LOCALES = dict mapping language --> explicit locale for the languages
-# in TRANSLATIONS. You can ommit one or more keys.
+# in TRANSLATIONS. You can omit one or more keys.
 # LOCALE_FALLBACK = locale to use when an explicit locale is unavailable
 # LOCALE_DEFAULT = locale to use for languages not mentioned in LOCALES; if
 # not set the default Nikola mapping is used.
