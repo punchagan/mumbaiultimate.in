@@ -6,3 +6,6 @@
 .. description:
 .. hidetitle: True
 
+Home page for Mumbai Ultimate.
+
+Coming Soon!
