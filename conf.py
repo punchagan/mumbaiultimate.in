@@ -141,7 +141,7 @@ INDEX_PATH = "posts"
 # output / TRANSLATION[lang] / ARCHIVE_PATH / ARCHIVE_FILENAME
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / index.html
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / MONTH / index.html
-# ARCHIVE_PATH = ""
+ARCHIVE_PATH = "posts"
 # ARCHIVE_FILENAME = "archive.html"
 
 # URLs to other posts/pages can take 3 forms:
