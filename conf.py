@@ -34,14 +34,14 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         (
             (
-                ('/2013/', 'Home'),
-                ('/2013/#about', 'About'),
-                ('/2013/#venue', 'Venue'),
-                ('/2013/register', 'Register'),
-                ('/2013/#teams', 'Teams'),
-                ('/2013/#sponsors', 'Sponsors'),
+                ('/2014/', 'Home'),
+                ('/2014/#about', 'About'),
+                ('/2014/#venue', 'Venue'),
+                ('/2014/register', 'Register'),
+                ('/2014/#teams', 'Teams'),
+                ('/2014/#sponsors', 'Sponsors'),
             ),
-            'Mumbai Ultimate Open-2013',
+            'Mumbai Ultimate Open-2014',
         ),
     ),
 }
