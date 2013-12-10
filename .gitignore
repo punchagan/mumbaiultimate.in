@@ -35,6 +35,10 @@ nosetests.xml
 .project
 .pydevproject
 
+# Editor related
+.idea/
+*~
+
 # Nikola related
 output/
 cache/
