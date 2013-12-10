@@ -37,6 +37,7 @@ NAVIGATION_LINKS = {
                 ('/2013/', 'Home'),
                 ('/2013/#about', 'About'),
                 ('/2013/#venue', 'Venue'),
+                ('/2013/register', 'Register'),
                 ('/2013/#teams', 'Teams'),
                 ('/2013/#sponsors', 'Sponsors'),
             ),
