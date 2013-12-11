@@ -5,6 +5,17 @@ body {
   font-family: "Roboto Slab", brandon-grotesque, "Brandon Grotesque", "Gill Sans", "Gill Sans MT", sans-serif;
 }
 
+section {
+  min-height: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+section h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .navbar-static-top {
   margin-bottom: 19px;
 }
