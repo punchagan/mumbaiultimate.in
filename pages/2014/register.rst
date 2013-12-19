@@ -6,5 +6,7 @@
 .. description:
 .. hidetitle: true
 
-Registration is not open yet.  We'll update this page, and post a notification
-once it is!
+.. raw:: html
+
+    <iframe src="https://docs.google.com/forms/d/1aaBTOFo4GkdDoFTM4izTG1XtW6unXLSkceRpe064d3k/viewform?embedded=true#start=openform"
+    width="760" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
