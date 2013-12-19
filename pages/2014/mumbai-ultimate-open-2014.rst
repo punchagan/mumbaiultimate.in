@@ -19,8 +19,8 @@ Mumbai, India
 
 .. raw:: html
 
-    <div id="map" class="visible-sm visible-md visible-lg"></div>
+    <div id="map" class="visible-sm visible-md visible-lg map"></div>
 
 .. container:: visible-xs
 
-    Goregaon Sports Club.
+    Goregaon Sports Club, Mumbai.  `View on Google Maps <http://goo.gl/maps/0w9zu>`_

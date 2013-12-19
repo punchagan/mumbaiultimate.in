@@ -613,11 +613,9 @@ LOGGING_HANDLERS = {
 }
 
 BODY_END = """
-
-
 <script type="text/javascript">
-
-		var map = L.map('map').setView([19.182559, 72.834452], 15);
+        var gsc_coords = [19.18226,72.834506];
+		var map = L.map('map').setView(gsc_coords, 15);
 
 		L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
 			maxZoom: 18,
@@ -625,13 +623,29 @@ BODY_END = """
 		}).addTo(map);
 
 
-		L.marker([19.182559, 72.834452]).addTo(map)
-			.bindPopup("Goregaon Sports Club").openPopup();
-
-		var popup = L.popup();
+		L.marker(gsc_coords).addTo(map)
+			.bindPopup("Goregaon Sports Club <a href='http://goo.gl/maps/0w9zu'>View on Google Maps</a>").openPopup();
 
         map.scrollWheelZoom.disable();
 </script>
+
+<script type="text/javascript">
+        var map_div = document.getElementById('juhu');
+        var juhu_coords = [19.090656,72.826676];
+		var juhumap = L.map(map_div).setView(juhu_coords, 15);
+
+		L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
+			maxZoom: 18,
+			attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'
+		}).addTo(juhumap);
+
+
+		L.marker(juhu_coords).addTo(juhumap)
+			.bindPopup("Juhu Beach <a href='http://goo.gl/maps/Rpwco'>View on Google Maps</a>").openPopup();
+
+        juhumap.scrollWheelZoom.disable();
+</script>
+
 """
 
 # Put in global_context things you want available on all your templates.
@@ -667,5 +681,6 @@ GLOBAL_CONTEXT = {
             'http://placehold.it/200x200&text=Sponsor us!',
             '#',
         ),
-    ]
+    ],
+
 }
