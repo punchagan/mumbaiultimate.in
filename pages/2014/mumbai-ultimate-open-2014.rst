@@ -15,12 +15,11 @@ Coming Soon ...
 Venue
 =====
 
-Mumbai, India
-
 .. raw:: html
 
     <div id="map" class="visible-sm visible-md visible-lg map"></div>
 
 .. container:: visible-xs
 
-    Goregaon Sports Club, Mumbai.  `View on Google Maps <http://goo.gl/maps/0w9zu>`_
+    `Goregaon Sports Club, Mumbai <http://www.gsc.in>`_
+    (`View on Google Maps <http://goo.gl/maps/0w9zu>`_)
