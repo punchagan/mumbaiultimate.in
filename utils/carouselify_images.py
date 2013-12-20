@@ -47,37 +47,46 @@ def get_image_aspect_ratio(image):
     return aspect_ratio
 
 
-def convert_to(image, current_aspect_ratio, new_aspect_ratio):
+def convert_to(image, current_aspect_ratio, new_aspect_ratio, offset):
     """ Convert the image to the given aspect ratio. """
 
     crop_factor = current_aspect_ratio / new_aspect_ratio
 
     if crop_factor != 1.0:
         width, height = image.size
-        crop_height = int(height * (1-crop_factor) / 2)
-        area = image.crop((0, crop_height, width, height-crop_height))
+        top = int(height * (1-crop_factor) * (1 + offset) / 2.)
+        bot = int(height * crop_factor) + top
+        area = image.crop((0, top, width, bot))
     else:
         area = image.copy()
 
     return save_image(area, new_aspect_ratio, image.filename, image.format)
 
 
-def carouselify_image(image_path):
+def carouselify_image(image_path, offset=0):
     """ Make the image usable in a carousel. """
 
     image = Image.open(image_path)
     aspect_ratio = get_image_aspect_ratio(image)
 
     for r in ASPECT_RATIOS:
-        filename = basename(convert_to(image, aspect_ratio, r))
+        filename = basename(convert_to(image, aspect_ratio, r, offset))
         path = PREFIX + filename
         print('<img src="%s" class="%s">' % (path, STYLE_MAPPING[str(r)]))
 
 if __name__ == '__main__':
     import sys
 
-    if len(sys.argv) != 2:
-        print('Usage: %s path/to/image' % sys.argv[0])
+    if len(sys.argv) < 2:
+        print('Usage: %s path/to/image [offset]' % sys.argv[0])
+        print('    offset: the offset of the box from center. -1 is top.')
 
     else:
-        carouselify_image(sys.argv[1])
+
+        offset = float(sys.argv[2]) if len(sys.argv) == 3 else 0
+        if offset < -1:
+            offset = -1
+        elif offset > 1:
+            offset = 1
+
+        carouselify_image(sys.argv[1], offset)
