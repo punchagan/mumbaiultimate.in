@@ -144,6 +144,14 @@ pre, pre code {
   min-height: 512px;
 }
 
+/* Carousel image credits. */
+.credits {
+  font-size: 75%;
+}
+
+.credits a {
+  color: white;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
