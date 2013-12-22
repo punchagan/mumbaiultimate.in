@@ -284,7 +284,7 @@ THEME = "custom"
 
 # date format used to display post dates.
 # (str used by datetime.datetime.strftime)
-# DATE_FORMAT = '%Y-%m-%d %H:%M'
+DATE_FORMAT = '%d %B, %Y'
 
 # FAVICONS contains (name, file, size) tuples.
 # Used for create favicon link like this:
@@ -297,7 +297,7 @@ THEME = "custom"
 # }
 
 # Show only teasers in the index pages? Defaults to False.
-# INDEX_TEASERS = False
+INDEX_TEASERS = True
 
 # A HTML fragment with the Read more... link.
 # The following tags exist and are replaced for you:
@@ -305,7 +305,7 @@ THEME = "custom"
 # {read_more}   The string “Read more” in the current language.
 # {{            A literal { (U+007B LEFT CURLY BRACKET)
 # }}            A literal } (U+007D RIGHT CURLY BRACKET)
-# READ_MORE_LINK = '<p class="more"><a href="{link}">{read_more}…</a></p>'
+READ_MORE_LINK = ''
 
 # A HTML fragment describing the license, for the sidebar.
 LICENSE = """

@@ -1,0 +1,14 @@
+## -*- coding: utf-8 -*-
+<!-- Begin post-list ${post_list_id} -->
+<div id="${post_list_id}" class="post-list">
+    % for post in posts:
+		<h2>
+		<a href="${post.permalink(lang)}">${post.title(lang)}</a>
+		<small>${post.formatted_date(date_format)}</small>
+		</h2>
+        <div class="p-summary">
+            ${post.text(teaser_only=True)}
+        </div>
+    % endfor
+</div>
+<!-- End post-list ${post_list_id} -->

@@ -43,7 +43,5 @@ nosetests.xml
 output/
 cache/
 plugins/
-themes/
 .doit.db
 Guardfile
-
