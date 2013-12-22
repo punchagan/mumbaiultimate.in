@@ -24,6 +24,7 @@ News
         :stop: 5
         :tags: 2014
         :template: post_list.tmpl
+        :id: news-post-list
 
 
   .. container:: col-lg-6 col-md-6 col-sm-6 hidden-xs

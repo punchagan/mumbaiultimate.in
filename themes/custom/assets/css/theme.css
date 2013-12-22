@@ -127,6 +127,10 @@ pre, pre code {
     height: 600px;
 }
 
+#news-post-list {
+    min-height: 400px;
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
