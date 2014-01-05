@@ -7,11 +7,6 @@
 .. hidetitle: true
 .. template: landing.tmpl
 
-About
-=====
-
-Coming Soon ...
-
 News
 ====
 
