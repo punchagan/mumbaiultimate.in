@@ -21,7 +21,6 @@ News
         :template: post_list.tmpl
         :id: news-post-list
 
-
   .. container:: col-lg-6 col-md-6 col-sm-6 hidden-xs
 
     .. raw:: html
