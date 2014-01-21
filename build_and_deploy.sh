@@ -5,13 +5,13 @@ nikola build
 
 # Setup git for pushing from Travis
 ## Setup user details, so commits etc work.
-git config user.email "travis@testing.ci"
-git config user.name "Travis CI"
+git config user.email $GIT_EMAIL
+git config user.name $GIT_NAME
 ## Change the remote url using the token
 git remote set-url --push origin https://github.com/punchagan/mumbaiultimate.in.git
 ## Setup credentials
 git config credential.helper "store --file=.git/credentials"
-echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+echo "https://$GH_TOKEN:@github.com" > .git/credentials
 
 # Commit the Build output
 ## Create a new gh-pages branch
