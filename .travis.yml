@@ -8,3 +8,22 @@ install:
 # command to run tests, e.g. python setup.py test
 script:
   nikola build
+
+  # Create a new gh-pages branch
+  git branch -D gh-pages || true
+  git checkout --orphan gh-pages
+
+  # Remove all the source files, we only want the output!
+  git rm -rf !(output)
+  mv output/* .
+
+  # Remove deleted files
+  git ls-files --deleted -z | xargs -0 git rm >/dev/null 2>&1
+  # Add new files
+  git add . >/dev/null 2>&1
+
+  # Commit
+  git commit -m "$(date)"
+
+  # Push!
+  git push -f origin gh-pages:gh-pages
