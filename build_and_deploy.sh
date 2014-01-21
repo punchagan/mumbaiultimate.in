@@ -8,10 +8,9 @@ nikola build
 git config user.email $GIT_EMAIL
 git config user.name $GIT_NAME
 ## Change the remote url using the token
-git remote set-url --push origin https://github.com/punchagan/mumbaiultimate.in.git
+git remote set-url --push origin https://$GH_TOKEN@github.com/punchagan/mumbaiultimate.in.git
 ## Setup credentials
 git config credential.helper "store --file=.git/credentials"
-echo "https://$GH_TOKEN:@github.com" > .git/credentials
 
 # Commit the Build output
 ## Create a new gh-pages branch
