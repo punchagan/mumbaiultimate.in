@@ -9,6 +9,9 @@ git config user.email "travis@testing.ci"
 git config user.name "Travis CI"
 ## Change the remote url using the token
 git remote set-url --push origin https://github.com/punchagan/mumbaiultimate.in.git
+## Setup credentials
+git config credential.helper "store --file=.git/credentials"
+echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 
 # Commit the Build output
 ## Create a new gh-pages branch
