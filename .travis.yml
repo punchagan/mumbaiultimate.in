@@ -1,30 +1,8 @@
 language: python
 python:
-  - "2.7"
-# command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
-install:
-  pip install -e git+https://github.com/getnikola/nikola.git#egg=nikola
-
-# command to run tests, e.g. python setup.py test
-script:
-  nikola build
-
-after_script:
-  # Create a new gh-pages branch
-  - git branch -D gh-pages || true
-  - git checkout --orphan gh-pages
-
-  # Remove all the source files, we only want the output!
-  - git rm -rf !(output)
-  - mv output/* .
-
-  # Remove deleted files
-  - git ls-files --deleted -z | xargs -0 git rm >/dev/null 2>&1
-  # Add new files
-  - git add . >/dev/null 2>&1
-
-  # Commit
-  - git commit -m "$(date)"
-
-  # Push!
-  - git push -f origin gh-pages:gh-pages
+- '2.7'
+install: pip install -e git+https://github.com/getnikola/nikola.git#egg=nikola
+script: ./build_and_deploy.sh
+env:
+  global:
+    secure: GkCIPGPsnvK+cxhBAft8FIm0B7hNyIOoVPqHA3iBU3JQy6HYxrMmfcxePB+rOPY0A/MqVQE6axJqxOMA4tRIYHoISUoQwz2T/dd74w9HcNUkGa8NaCdTuvE4BS1sdewoqPxsl4OdXNCTpY1hYJnr26u79JQ5gKT2pQmzTr8rH2I=
