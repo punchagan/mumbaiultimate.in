@@ -3,7 +3,7 @@ python:
   - "2.7"
 # command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
 install:
-  pip install nikola
+  pip install -e git+https://github.com/getnikola/nikola.git#egg=nikola
 
 # command to run tests, e.g. python setup.py test
 script:
