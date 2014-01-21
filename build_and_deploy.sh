@@ -27,4 +27,4 @@ git add . >/dev/null 2>&1
 git commit -m "$(date)"
 
 # Push!
-git push -f origin gh-pages:gh-pages
+git push -f origin gh-pages:gh-pages >/dev/null 2>&1
