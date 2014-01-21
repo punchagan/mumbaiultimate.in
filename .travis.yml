@@ -1,8 +1,6 @@
-language: python
-python:
-- '2.7'
-install: pip install -e git+https://github.com/getnikola/nikola.git#egg=nikola
-script: ./build_and_deploy.sh
 env:
-  global:
-    secure: GkCIPGPsnvK+cxhBAft8FIm0B7hNyIOoVPqHA3iBU3JQy6HYxrMmfcxePB+rOPY0A/MqVQE6axJqxOMA4tRIYHoISUoQwz2T/dd74w9HcNUkGa8NaCdTuvE4BS1sdewoqPxsl4OdXNCTpY1hYJnr26u79JQ5gKT2pQmzTr8rH2I=
+  global: {secure: AF6nHse8HI2j3ZdwKzHu23QmhhxTYz9/fJKRJbM5m2p2YD/HXIejryzgE7gd1sBsbzD1QCMk6041kpLBDqvX+UC0HMfVaXmg2daMAQhDuWHmyXHG0S9iCbuvJ5QX1vsTNP/1ZEr0sFQ4Ue+ZEiXjkEaV1jsoPlmPVttzSagHsF8=}
+install: pip install -e git+https://github.com/getnikola/nikola.git#egg=nikola
+language: python
+python: ['2.7']
+script: ./build_and_deploy.sh
