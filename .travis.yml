@@ -1,5 +1,7 @@
+branches:
+  only: [master]
 env:
-  global: {secure: T986wvurRElxwUoGrop8+LWHk3K3B7sSwtiCN9z8ZyOcLqASTHg/BXMbk34y+MKcVnHu2Lh7+UiqzdmYNlnMylASmb7TyK990XPtcFV2+BMab0dF/KpmDDWuqLNamSZ6zLhZgCWyidCjfrNcmQgQrsw45ucaZfavBaHcGYjDasI=}
+  global: {secure: Fbrfq+v7R/n1CpgeP9iefnLEb3OD7Wz8ILsdhHSo5JP336jvgK/sVKOsfYaAZhBzaGFymTdisulUgL1og0er7c6o+52Nbzurp7dcDsKvXbN6FroJJ70rzxCvnwFp4AJkerswyHHjtKZ+kV3qCr5nqbK27Fz9IRBCTmRi3n3lIHI=}
 install: pip install -e git+https://github.com/getnikola/nikola.git#egg=nikola
 language: python
 python: ['2.7']
