@@ -667,11 +667,6 @@ PING_GET_SERVICES = [
     ),
 ]
 
-# Hooks to be run, when deploying new posts.
-DEPLOYED_HOOKS = [
-    "twitter --oauth ~/.twitter_oauth_mu set \"${entry.title()} ${entry.permalink(absolute=True)} ${' '.join(['#'+tag for tag in entry.tags])}\"",
-]
-
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
 
