@@ -1,6 +1,6 @@
 env:
-  global: {secure: AF6nHse8HI2j3ZdwKzHu23QmhhxTYz9/fJKRJbM5m2p2YD/HXIejryzgE7gd1sBsbzD1QCMk6041kpLBDqvX+UC0HMfVaXmg2daMAQhDuWHmyXHG0S9iCbuvJ5QX1vsTNP/1ZEr0sFQ4Ue+ZEiXjkEaV1jsoPlmPVttzSagHsF8=}
+  global: {secure: T986wvurRElxwUoGrop8+LWHk3K3B7sSwtiCN9z8ZyOcLqASTHg/BXMbk34y+MKcVnHu2Lh7+UiqzdmYNlnMylASmb7TyK990XPtcFV2+BMab0dF/KpmDDWuqLNamSZ6zLhZgCWyidCjfrNcmQgQrsw45ucaZfavBaHcGYjDasI=}
 install: pip install -e git+https://github.com/getnikola/nikola.git#egg=nikola
 language: python
 python: ['2.7']
-script: ./build_and_deploy.sh
+script: ./travis_build_n_deploy.sh
