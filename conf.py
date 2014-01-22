@@ -147,7 +147,7 @@ ARCHIVE_PATH = "posts"
 # rel_path: a relative URL to the current page/post (default)
 # full_path: a URL with the full path from the root
 # absolute: a complete URL (that includes the SITE_URL)
-# URL_TYPE = 'rel_path'
+URL_TYPE = 'absolute'
 
 # Final locations are:
 # output / TRANSLATION[lang] / RSS_PATH / rss.xml
