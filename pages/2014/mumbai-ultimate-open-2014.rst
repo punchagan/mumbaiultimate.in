@@ -33,6 +33,8 @@ News
     <p><a href="https://twitter.com/mumbaiultimate"><i class="fa fa-twitter"></i></a>
     <a href="http://mumbaiultimate.in/rss.xml"><i class="fa fa-rss-square"></i></a>
     <a href="https://www.facebook.com/groups/mumbaiultimate"><i class="fa fa-facebook-square"></i></a>
+    <a href="https://www.facebook.com/GheunTak2014"><i class="fa fa-facebook-square"></i></a>
+
     for updates about the tournament.
 
 Venue
