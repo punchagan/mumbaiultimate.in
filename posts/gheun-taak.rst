@@ -11,7 +11,7 @@ the title!
 
 .. TEASER_END
 
-Ultimate Gheun Tak!  That is what Mumbai Ultimate Open '14 will be
+Ultimate Gheun Tak!  That's what Mumbai Ultimate Open '14 will be
 called.  Thanks to `Diti <http://ditikotecha.com>`_ and the creative
 team, for the name, and the lovely logo!
 
