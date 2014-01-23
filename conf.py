@@ -40,7 +40,7 @@ NAVIGATION_LINKS = {
                 ('/2014/#teams', 'Teams'),
                 ('/2014/#sponsors', 'Sponsors'),
             ),
-            'Mumbai Ultimate Open-2014',
+            'Ultimate Gheun Tak',
         ),
     ),
 }
