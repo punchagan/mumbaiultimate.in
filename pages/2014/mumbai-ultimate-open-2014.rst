@@ -10,6 +10,16 @@
 News
 ====
 
+.. raw:: html
+
+    <p><a href="https://twitter.com/mumbaiultimate"><i class="fa fa-twitter"></i></a>
+    <a href="http://mumbaiultimate.in/rss.xml"><i class="fa fa-rss-square"></i></a>
+    <a href="https://www.facebook.com/groups/mumbaiultimate"><i class="fa fa-facebook-square"></i></a>
+    <a href="https://www.facebook.com/GheunTak2014"><i class="fa fa-facebook-square"></i></a>
+
+    for updates about the tournament.
+
+
 .. container:: row-fluid
 
   .. container:: col-lg-6 col-md-6 col-sm-6 col-sm-12
@@ -27,15 +37,6 @@ News
 
       <a class="twitter-timeline" href="https://twitter.com/search?q=mumbaiultimate" data-widget-id="414674167510736897">Tweets about "mumbaiultimate"</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-.. raw:: html
-
-    <p><a href="https://twitter.com/mumbaiultimate"><i class="fa fa-twitter"></i></a>
-    <a href="http://mumbaiultimate.in/rss.xml"><i class="fa fa-rss-square"></i></a>
-    <a href="https://www.facebook.com/groups/mumbaiultimate"><i class="fa fa-facebook-square"></i></a>
-    <a href="https://www.facebook.com/GheunTak2014"><i class="fa fa-facebook-square"></i></a>
-
-    for updates about the tournament.
 
 Venue
 =====
