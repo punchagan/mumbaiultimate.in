@@ -1,5 +1,5 @@
 <%def name="list_teams()">
-<section id="teams">
+<div class="section img-table" id="teams">
   <h2>Teams</h2>
     <div class="row-fluid">
       %for name, img, url in TEAMS:
@@ -13,11 +13,11 @@
         </div>
       %endfor
     </div>
-</section>
+</div>
 </%def>
 
 <%def name="list_sponsors()">
-<section id="sponsors">
+<div class="section img-table" id="sponsors">
   <h2>Sponsors</h2>
     <div class="row-fluid">
       %for name, img, url in SPONSORS:
@@ -31,5 +31,5 @@
         </div>
       %endfor
     </div>
-</section>
+</div>
 </%def>

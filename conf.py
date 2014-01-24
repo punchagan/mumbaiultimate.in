@@ -678,13 +678,18 @@ GLOBAL_CONTEXT = {
             "https://www.facebook.com/stormchasers.mu",
         ),
         (
-            'Your team!',
-            'http://placehold.it/200x200&text=Your team!',
-            '#',
+            'Dishqiya',
+            'http://www.bangaloreultimate.com/registered/img/hyd.jpg',
+            'https://www.facebook.com/Dishqiya',
         ),
         (
-            'Register Now!',
-            'http://placehold.it/200x200&text=Register Now!',
+            'Flying Spirits',
+            'http://ffindr.com/uploads/images/items/1ce10e4f724c20752568ef601892661a44b3f8dd.png',
+            'https://www.facebook.com/groups/puneultimatefrisbee/',
+        ),
+        (
+            'Huck OK Please!',
+            'http://placehold.it/200x200&text=Huck OK Please!',
             '#',
         ),
     ],

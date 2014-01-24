@@ -121,6 +121,10 @@ pre, pre code {
    max-height: 200px;
 }
 
+.img-table {
+    display: table-row;
+}
+
 /* Leaflet (venue) map related!
 ---------------------------------------------------*/
 .map {
