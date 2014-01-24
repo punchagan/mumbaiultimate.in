@@ -673,11 +673,6 @@ PING_GET_SERVICES = [
 GLOBAL_CONTEXT = {
     'TEAMS': [
         (
-            'Storm Chasers',
-            "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/c0.12.180.180/s160x160/249789_1383693768818_3672602_a.jpg",
-            "https://www.facebook.com/stormchasers.mu",
-        ),
-        (
             'Dishqiya',
             'http://www.bangaloreultimate.com/registered/img/hyd.jpg',
             'https://www.facebook.com/Dishqiya',
@@ -691,6 +686,11 @@ GLOBAL_CONTEXT = {
             'Huck OK Please!',
             'http://placehold.it/200x200&text=Huck OK Please!',
             '#',
+        ),
+        (
+            'Storm Chasers',
+            "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/c0.12.180.180/s160x160/249789_1383693768818_3672602_a.jpg",
+            "https://www.facebook.com/stormchasers.mu",
         ),
     ],
 
