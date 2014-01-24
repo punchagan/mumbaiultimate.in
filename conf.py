@@ -675,7 +675,7 @@ GLOBAL_CONTEXT = {
         (
             'Dishqiya',
             'http://www.bangaloreultimate.com/registered/img/hyd.jpg',
-            'https://www.facebook.com/Dishqiya',
+            'https://www.facebook.com/groups/349567888437011/',
         ),
         (
             'Flying Spirits',
