@@ -6,7 +6,7 @@
 .. description: The countdown has begun!
 .. type: text
 
-There just about 6 weeks to go for the tournament.  Register, book
+There's just about 6 weeks to go for the tournament.  Register, book
 your tickets, apply for a leave, eat healthy, train hard, strategize
 and do-everything-you-need-to, to GheunTak! `Here's a countdown
 <http://mumbaiultimate.in/2014>`_ to help you keep track ...
