@@ -18,3 +18,6 @@ first three days are the main tournament days, and the finals will be
 played on Saturday, 8th.  Sunday is meant to be a fun day,
 where the players from various tournaments can hangout together and may be
 play some beach Ultimate or tour around Mumbai!
+
+EDIT: The dates have been changed to 7th to 9th March, 2014. (Friday,
+Saturday, Sunday)
