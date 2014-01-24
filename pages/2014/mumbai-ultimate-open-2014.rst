@@ -7,6 +7,14 @@
 .. hidetitle: true
 .. template: landing.tmpl
 
+.. raw:: html
+
+    <div class="row countdown-container hidden-xs">
+      <span class="clearfix col-lg-1 col-md-1 col-sm-1"></span>
+      <div id="countdown"></div>
+      <span class="clearfix col-lg-1 col-md-1 col-sm-1"></span>
+    </div>
+
 News
 ====
 
@@ -22,7 +30,7 @@ News
 
 .. container:: row-fluid
 
-  .. container:: col-lg-6 col-md-6 col-sm-6 col-sm-12
+  .. container:: col-lg-6 col-md-6 col-sm-6 col-xs-12
 
      .. post-list::
         :start: 0

@@ -126,6 +126,18 @@ pre, pre code {
     display: table-row;
 }
 
+/* Countdown timer
+-------------------------------------------------- */
+
+#countdown {
+    text-align: center;
+}
+
+.date-description {
+    text-transform: uppercase;
+    font-size: 50%;
+}
+
 /* Leaflet (venue) map related!
 ---------------------------------------------------*/
 .map {

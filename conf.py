@@ -649,6 +649,23 @@ BODY_END = """
         juhumap.scrollWheelZoom.disable();
 </script>
 
+<script type="text/javascript" src="//cdn.jsdelivr.net/countdown/1.6.1/jquery.countdown.min.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+  $('#countdown').countdown(
+    {
+      until: new Date(2014, 2, 7, 9, 0, 0),
+      timezone: +5.5,
+      format: 'WDHMS',
+      layout: '<span class="h1 col-lg-2 col-md-2 col-sm-2 col-xs-2">{wn}</br><span class="date-description">{wl}</span></span>'+
+              '<span class="h1 col-lg-2 col-md-2 col-sm-2 col-xs-2">{dn}</br><span class="date-description">{dl}</span></span>'+
+              '<span class="h1 col-lg-2 col-md-2 col-sm-2 col-xs-2">{hn}</br><span class="date-description">{hl}</span></span>'+
+              '<span class="h1 col-lg-2 col-md-2 col-sm-2 col-xs-2">{mn}</br><span class="date-description">{ml}</span></span>'+
+              '<span class="h1 col-lg-2 col-md-2 col-sm-2 col-xs-2">{sn}</br><span class="date-description">{sl}</span></span>'
+    }
+  );
+</script>
+
 """
 
 # List XML-RPC services (preferred) in PING_XMLRPC_SERVICES and HTTP
