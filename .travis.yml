@@ -8,6 +8,6 @@ install:
   - pip install nikola
 language: python
 python: ['2.7']
-script: ./travis_build_n_deploy.sh
+script: bash ./travis_build_n_deploy.sh
 virtualenv:
   system_site_packages: true
