@@ -1,7 +1,7 @@
 .. title: Photographer Friend and Ultimate Lover, on board!
 .. slug: photographer-friend-and-ultimate-lover-on-board
 .. date: 2014/01/28 19:32:38
-.. tags:
+.. tags: 2014, tournament, photographs, gheuntaak
 .. link:
 .. description: Ritesh has kindly agreed to cover the whole event.
 .. type: text
