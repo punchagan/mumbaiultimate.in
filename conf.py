@@ -701,8 +701,18 @@ GLOBAL_CONTEXT = {
         ),
         (
             'Huck OK Please!',
-            'http://i.imgur.com/6MdvAf8.jpg', #http://placehold.it/200x200&text=Huck OK Please!',
+            'http://i.imgur.com/6MdvAf8.jpg',
             'http://i.imgur.com/LHN2b9j.jpg',
+        ),
+        (
+            'Trailblazers',
+            'http://placehold.it/200x200&text=Trailblazers',
+            'http://ffindr.com/en/team/india/surat-trailblazers',
+        ),
+        (
+            'Jumbish',
+            'http://placehold.it/200x200&text=Jumbish',
+            '#',
         ),
         (
             'Storm Chasers',
