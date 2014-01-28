@@ -690,9 +690,9 @@ PING_GET_SERVICES = [
 GLOBAL_CONTEXT = {
     'TEAMS': [
         (
-            'Dishqiya',
-            'http://www.bangaloreultimate.com/registered/img/hyd.jpg',
-            'https://www.facebook.com/groups/349567888437011/',
+            'Sultans of Spin',
+            'http://placehold.it/200x200&text=Sultans of Spin',
+            '#',
         ),
         (
             'Flying Spirits',
