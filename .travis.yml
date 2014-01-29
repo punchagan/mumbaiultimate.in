@@ -3,9 +3,9 @@ branches:
 env:
   global: {secure: Fbrfq+v7R/n1CpgeP9iefnLEb3OD7Wz8ILsdhHSo5JP336jvgK/sVKOsfYaAZhBzaGFymTdisulUgL1og0er7c6o+52Nbzurp7dcDsKvXbN6FroJJ70rzxCvnwFp4AJkerswyHHjtKZ+kV3qCr5nqbK27Fz9IRBCTmRi3n3lIHI=}
 before_install:
-  - sudo apt-get install -qq python-lxml python-imaging
+  - sudo apt-get install -qq python-lxml
 install:
-  - pip install nikola
+  - pip install nikola webassets
 language: python
 python: ['2.7']
 script: bash ./travis_build_n_deploy.sh
