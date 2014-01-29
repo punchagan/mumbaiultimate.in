@@ -70,7 +70,7 @@ function initialize_site() {
 
 # Run only if not a pull request.
 if [[ $TRAVIS_PULL_REQUEST == 'false' ]] ; then
-    setup_git_config
+    git_config_setup
 
     if [[ ! -f conf.py ]]; then
         initialize_site
