@@ -715,6 +715,11 @@ GLOBAL_CONTEXT = {
             '#',
         ),
         (
+            'Stray Dogs in Sweaters',
+            'http://i.imgur.com/76CYXlk.jpg',
+            'http://www.delhiultimate.in/SDIS',
+        ),
+        (
             'Storm Chasers',
             "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/c0.12.180.180/s160x160/249789_1383693768818_3672602_a.jpg",
             "https://www.facebook.com/stormchasers.mu",
