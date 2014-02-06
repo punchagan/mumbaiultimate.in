@@ -735,7 +735,7 @@ GLOBAL_CONTEXT = {
             'http://www.auroville.org/society/ultimate.htm'
         ),
         (
-            'Hy Flers',
+            'Hy Flyers',
             'http://i.imgur.com/xp1TWaV.jpg',
             'https://www.facebook.com/HyFlyersUltimateFrisbeeTeam'
         ),
