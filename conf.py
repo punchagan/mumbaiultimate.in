@@ -730,6 +730,16 @@ GLOBAL_CONTEXT = {
             '#',
         ),
         (
+            'Spinergy',
+            'http://i.imgur.com/1szphZA.jpg',
+            'http://www.auroville.org/society/ultimate.htm'
+        ),
+        (
+            'Hy Flers',
+            'http://i.imgur.com/xp1TWaV.jpg',
+            'https://www.facebook.com/HyFlyersUltimateFrisbeeTeam'
+        ),
+        (
             'Storm Chasers',
             "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/c0.12.180.180/s160x160/249789_1383693768818_3672602_a.jpg",
             "https://www.facebook.com/stormchasers.mu",
