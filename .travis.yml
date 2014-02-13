@@ -1,10 +1,10 @@
-before_install: sudo apt-get install -qq python-lxml
 branches:
   only: [master]
 env:
-  global: {secure: fMaELtEJoz9fPhSoQsvNqxkpLppRajgYIQ9mm8ZGM6nNHyDC04F+w+8Ac2Uw6vhc6EvDFYNWTcSVNAkWv7UKvklsL2HskB4V1NN+aKIzpOHlt9zmmPrFvz4SPpC2z2QfzihIoig2Aeg+HwiVDh5CaO16j3vgkJUIm9foBVvU154=}
-install: pip install nikola webassets
+  global: {secure: f8DSIJUgh+vATAUBTYoJhp0s1kk8CtDZgV6S+NC/gPsNCUEAVb0VdPxQkaM0hhl6fjee7537IOs8LV9VTfzG81GE2VVcN/sGKfmFYBJyR+8AvYqxHwh9OYuf2IZl9cBUQ463lB+EL0apRje0a8fn5hlPKLqQo23P8Xsvwpfor5I=}
+install: ['wget https://github.com/getnikola/wheelhouse/archive/v2.7.zip', unzip v2.7.zip,
+  pip install --use-wheel --no-index --find-links=wheelhouse-2.7 lxml Pillow, rm -rf
+    wheelhouse-2.7 v2.7.zip, pip install nikola webassets]
 language: python
 python: ['2.7']
-script: bash travis_build_n_deploy.sh
-virtualenv: {system_site_packages: true}
+script: bash ./travis_build_n_deploy.sh
