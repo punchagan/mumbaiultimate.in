@@ -691,7 +691,7 @@ GLOBAL_CONTEXT = {
     'TEAMS': [
         (
             'Sultans of Spin',
-            'http://placehold.it/200x200&text=Sultans of Spin',
+            'http://i.imgur.com/1RKoTVo.jpg',
             '#',
         ),
         (
@@ -726,8 +726,8 @@ GLOBAL_CONTEXT = {
         ),
         (
             'Goan Sausage',
-            'http://placehold.it/200x200&text=Goan Sausage',
-            '#',
+            'http://i.imgur.com/VtYaDZH.jpg',
+            'https://www.facebook.com/groups/197174290366853/',
         ),
         (
             'Spinergy',
@@ -743,6 +743,11 @@ GLOBAL_CONTEXT = {
           'Disco-Tech',
           'http://i.imgur.com/KMP7TMG.jpg',
           'https://www.facebook.com/hyddiscotech'
+        ),
+        (
+            'Falcons',
+            'http://i.imgur.com/lRJCXOl.jpg',
+            'http://www.bangaloreultimate.com/falcons/',
         ),
         (
             'Storm Chasers',
