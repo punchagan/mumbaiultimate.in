@@ -758,14 +758,9 @@ GLOBAL_CONTEXT = {
 
     'SPONSORS': [
         (
-            'You',
-            'http://placehold.it/200x200&text=You',
-            '#',
-        ),
-        (
-            'Sponsor us!',
-            'http://placehold.it/200x200&text=Sponsor us!',
-            '#',
+            'Usha',
+            'http://www.ushainternational.com/images/logo.png',
+            'http://www.ushainternational.com/',
         ),
     ],
 
