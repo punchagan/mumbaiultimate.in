@@ -28,6 +28,11 @@ You are welcome to join us at practice.  Check our
 `google group <https://groups.google.com/forum/#!forum/mumbai-ultimate>`_
 to see if we are having a practice session on a particular day.
 
+We are also on `twitter <https://twitter.com/mumbaiultimate>`_ and `facebook
+<https://www.facebook.com/stormchasers.mu>`_
+
+If you are looking for the Navi Mumbai team, they are `here <http://mufc.in>`_.
+
 **Checklist**
 
 1. Water. Bring at least a liter of water. Stay hydrated.
